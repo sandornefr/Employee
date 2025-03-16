@@ -42,12 +42,28 @@ namespace Employee
             Console.WriteLine("Nyugdíj előtt állók:");
             foreach (var item in employers)
             {
-                if (item.Kor==55)
+                if (item.Kor == 55)
                 {
                     Console.WriteLine($"Neve: {item.Nev}, kora: {item.Kor}");
                 }
             }
         }
+
+        public static int feladat6()
+        {
+            int count = 0;
+
+            foreach (var item in employers)
+            {
+                if (item.Kereset > 50000)
+                {
+                    count++;
+                }
+            }
+            
+            return count;
+        }
+
         static void Main(string[] args)
         {
             StreamReader sr = new StreamReader("tulajdonsagok_100sor.txt");
@@ -61,6 +77,7 @@ namespace Employee
             feladat3();
             feladat4();
             feladat5();
+            Console.WriteLine($"Összesen {feladat6()} dolgozó keres többet, mint 50000 Ft.");
         }
     }
 }
