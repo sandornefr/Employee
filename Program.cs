@@ -34,7 +34,19 @@ namespace Employee
                 }
             }
 
-            Console.WriteLine($"A legjobban kereső dolgozó azonosítója: {id}, neve: {employers[id-1].Nev}");
+            Console.WriteLine($"A legjobban kereső dolgozó azonosítója: {id}, neve: {employers[id - 1].Nev}");
+        }
+
+        public static void feladat5()
+        {
+            Console.WriteLine("Nyugdíj előtt állók:");
+            foreach (var item in employers)
+            {
+                if (item.Kor==55)
+                {
+                    Console.WriteLine($"Neve: {item.Nev}, kora: {item.Kor}");
+                }
+            }
         }
         static void Main(string[] args)
         {
@@ -48,6 +60,7 @@ namespace Employee
 
             feladat3();
             feladat4();
+            feladat5();
         }
     }
 }
