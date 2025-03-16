@@ -10,6 +10,32 @@ namespace Employee
     class Program
     {
         public static List<Employer> employers = new List<Employer>();
+
+        public static void feladat3()
+        {
+            Console.WriteLine("Az összes dolgozó neve: ");
+            foreach (var item in employers)
+            {
+                Console.WriteLine(item.Nev);
+            }
+        }
+
+        public static void feladat4()
+        {
+            int max = employers[0].Kereset;
+            int id = 0;
+
+            foreach (var item in employers)
+            {
+                if (item.Kereset > max)
+                {
+                    max = item.Kereset;
+                    id = item.Azonosito;
+                }
+            }
+
+            Console.WriteLine($"A legjobban kereső dolgozó azonosítója: {id}, neve: {employers[id-1].Nev}");
+        }
         static void Main(string[] args)
         {
             StreamReader sr = new StreamReader("tulajdonsagok_100sor.txt");
@@ -20,6 +46,8 @@ namespace Employee
                 employers.Add(emp);
             }
 
+            feladat3();
+            feladat4();
         }
     }
 }

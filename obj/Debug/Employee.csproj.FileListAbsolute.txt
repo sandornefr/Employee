@@ -1,0 +1,7 @@
+C:\Users\feker\GitWorkDir\Employee\bin\Debug\Employee.exe.config
+C:\Users\feker\GitWorkDir\Employee\bin\Debug\Employee.exe
+C:\Users\feker\GitWorkDir\Employee\bin\Debug\Employee.pdb
+C:\Users\feker\GitWorkDir\Employee\obj\Debug\Employee.csproj.AssemblyReference.cache
+C:\Users\feker\GitWorkDir\Employee\obj\Debug\Employee.csproj.CoreCompileInputs.cache
+C:\Users\feker\GitWorkDir\Employee\obj\Debug\Employee.exe
+C:\Users\feker\GitWorkDir\Employee\obj\Debug\Employee.pdb
